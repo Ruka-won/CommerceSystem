@@ -1,4 +1,36 @@
 package com.example.commerce;
 
+import java.util.List;
+import java.util.Scanner;
+
 public class Category {
+
+    //속성
+    private String name; // 1. 카테고리 이름
+    private List<Product> products; // 2. 제품 관리 리스트
+
+    //생성자
+    public Category(String name, List<Product> products) { // 카테고리명과 제품 리스트 받아오기
+        this.name = name;
+        this.products = products;
+    }
+
+    //기능
+    public String getName() {
+        return this.name;
+    }
+
+    public List<Product> getProducts() {
+        return this.products;
+    }
+
+
+
+
+
+
+
+
+
+
 }
