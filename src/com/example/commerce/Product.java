@@ -1,5 +1,7 @@
 package com.example.commerce;
 
+
+//상품 데이터를 표현해주는 역할
 public class Product {
     //속성
     //1. 제품에는 이름, 가격, 재고, 설명으로 설정
@@ -27,14 +29,33 @@ public class Product {
         //상품 이름 반환
         return this.name;
     }
+
     public int getPrice() {
         //상품 가격 반환
         return this.price;
     }
+
     public String getExplain() {
         //상품 설명 반환
         return this.explain;
+
+    }
+    //상품 가격 수정
+    public void setPrice(int price) {
+        this.price = price;
+
+    }
+    //상품 이름 수정
+    public void setName(String name) {
+        this.name = name;
+
+    }
+    //상품 설명 수정
+    public void setExplain(String explain) {
+        this.explain = explain;
+
     }
 
-
 }
+
+

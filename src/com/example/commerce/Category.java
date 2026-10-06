@@ -1,9 +1,9 @@
 package com.example.commerce;
 
 import java.util.List;
-import java.util.Scanner;
 
-public class Category {
+//종류(카테고리) 데이터를 표현해주는 역할
+public class  Category {
 
     //속성
     private String name; // 1. 카테고리 이름
@@ -19,6 +19,7 @@ public class Category {
     public String getName() {
         return this.name;
     }
+
 
     public List<Product> getProducts() {
         return this.products;

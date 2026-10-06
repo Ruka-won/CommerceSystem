@@ -3,7 +3,7 @@ package com.example.commerce;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-
+//프로그램에 필요한 객체 생성 역할
 public class Main {
     public static void main(String[] args) {
         //main 함수에서 Product 클래스 객체를 생성하여 상품 목록 추가한다. `new`
@@ -40,45 +40,6 @@ public class Main {
 
         CommerceSystem system = new CommerceSystem(categoryList); // 400[100,200,300] 전달한다.
         system.start(); // 기능 호출
-
-
-        // ✅ STEP 1. 객체지향 설계를 적용해 상품관리 프로그래밍 과제 구현 부분 ⬇️
-
-//        Scanner scanner = new Scanner(System.in); // 프로그램 종료 받기위해 미리 선언
-//        while (true) {
-//            System.out.println("[ 🖥️실시간 커머스 플랫폼 - 전자제품 ]");
-//            int i = 1; // 상품 번호 매기기
-//            //반복 사용해서 Product 상품 조회
-//            // p <- products[101,102,103,104] [0][1][2][3] 하나씩 담는다.
-////                String namebox = p.getName();// 101.getName와 같은 것. getName반환 됐어? namebox에 넣어.
-////                int pricebox = p.getPrice();
-////                String explainbox = p.getExplain();
-////                System.out.println(i +  ". " + namebox + "|" + pricebox + "|" + explainbox); // 박스에 담았으면 출력해.
-//            for (Product p : products) {
-//                System.out.printf("%d. %-15s | %,10d원 | %s%n",
-//                        i, p.getName(), p.getPrice(), p.getExplain());
-//                i++;
-//
-//            }
-//            System.out.println("0. 종료      | 🛑 프로그램 종료");
-//            System.out.print("숫자 입력: ");
-//            int choice = scanner.nextInt(); // 숫자 0 입력 시 종료.
-//
-//            if (choice == 0) {
-//                System.out.println("🛑 커머스 플랫폼을 종료합니다.");
-//                break;
-//
-//            } else if (choice >= 1 && choice <= products.size() ) { //product size 배열 크기[4]
-//                Product productSelect = products.get(choice-1); // 선택한 상품 조회
-//                System.out.println("\n[ ✅ 선택한 상품 정보 ]");
-//                System.out.printf("상품명 : %s%n", productSelect.getName()); // 박스에 담지않고 바로 반환받기
-//                System.out.printf("가  격 : %,d원%n", productSelect.getPrice());
-//                System.out.printf("설  명 : %s%n\n", productSelect.getExplain());
-//
-//            } else {
-//                System.out.println("❌ 잘못된 값을 입력하였습니다.\n"); // 예외처리
-
-
 
 
 
