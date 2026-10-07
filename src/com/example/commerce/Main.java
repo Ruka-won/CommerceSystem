@@ -9,7 +9,7 @@ public class Main {
         //main 함수에서 Product 클래스 객체를 생성하여 상품 목록 추가한다. `new`
         //new 생성자를 통해서 객체를 만들었기에 Heap 영역에 주소값으로 저장된다.
         // 1. 전자제품 카테고리와 들어갈 상품 생성
-        //List 선언하여 여러 electronicsList 저장 `.add()`/  ArrayList 동적 배열 생성
+        //List 선언하여 여러 electronicsList 저장 / 상품데이터를 표현해주는 객체 리스트 생성 (Product)
         List<Product> electronicsList = new ArrayList<>(); // 100층 (add해서 - [101,102,103,104] )
         electronicsList.add(new Product("Galaxy S25", 1200000, "최신 안드로이드 스마트폰",50)); // 101층
         electronicsList.add(new Product("iPhone 16", 1350000, "Apple의 최신 스마트폰",50)); // 102층
@@ -32,12 +32,13 @@ public class Main {
         foodList.add(new Product("햄버거",15000,"맥도날드",20));
 
         // 4. 전체 카테고리 모음
+        // 종류 데이터를 표현해주는 categoryList 생성
         List<Category> categoryList = new ArrayList<>(); // 400층 [100,200,300]
         categoryList.add(new Category("전자제품", electronicsList));
         categoryList.add(new Category("의류", clothingList));
         categoryList.add(new Category("식품", foodList));
 
-
+        //프로그램 흐름 제어를 위한 객체 생성
         CommerceSystem system = new CommerceSystem(categoryList); // 400[100,200,300] 전달한다.
         system.start(); // 기능 호출
 

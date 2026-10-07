@@ -31,6 +31,7 @@ public class CommerceSystem {
             System.out.print("숫자 입력: ");
 
             // 입력 받기
+            // 문자에 대한 예외처리가 없음 InputMismatchException
             int choice = scanner.nextInt();
 
             // 종료 처리

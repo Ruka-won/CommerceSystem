@@ -20,7 +20,7 @@ public class  Category {
         return this.name;
     }
 
-
+    //복제본 방법 : 원본 유지 ( return List.copyOf(this.products); )
     public List<Product> getProducts() {
         return this.products;
     }
